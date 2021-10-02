@@ -33,17 +33,17 @@ const Home = () => {
             
         } catch (error) {
             /* remove data fake*/
-                dispatch({ type: actions.getActorSuccess,
+                /* dispatch({ type: actions.getActorSuccess,
                     payload: "Brad Pitt"
                 });
-                history.push(`/detail`);
+                history.push(`/detail`); */
             /* remove */
             //Descoment next line
-            //history.push(`/`);
             dispatch({ 
                 type: actions.getActorError,
                 payload: error
             });
+            history.push(`/`);
         }
     };
 
