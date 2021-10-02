@@ -30,15 +30,7 @@ const Home = () => {
                 });
                 history.push(`/detail`);
             }
-            
         } catch (error) {
-            /* remove data fake*/
-                /* dispatch({ type: actions.getActorSuccess,
-                    payload: "Brad Pitt"
-                });
-                history.push(`/detail`); */
-            /* remove */
-            //Descoment next line
             dispatch({ 
                 type: actions.getActorError,
                 payload: error
